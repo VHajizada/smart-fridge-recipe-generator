@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#102b23">
+    <title>SmartFridge | Intelligent Food Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="brand">
+        <span class="brand-icon">✳</span>
+        SmartFridge<span class="brand-dot">.</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#scanner">Fridge Scanner</a>
+        <a href="#features">How it works</a>
+    </nav>
+
+    <a href="#scanner" class="nav-cta">Get Started <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                YOUR KITCHEN, REIMAGINED WITH AI
+            </div>
+
+            <h1>Good food.<br>
+                <span>Less waste.</span><br>
+                Smarter living.
+            </h1>
+
+            <p class="hero-description">
+                Turn what's already in your fridge into something extraordinary.
+                Discover ingredients, predict freshness and create smarter meals
+                with artificial intelligence.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#scanner" class="primary-button">
+                    Explore your fridge <span>↗</span>
+                </a>
+                <a href="#features" class="text-button">Discover how it works <span>→</span></a>
+            </div>
+
+            <div class="hero-proof">
+                <div class="proof-icon">✳</div>
+                <div>
+                    <strong>Smart food management</strong>
+                    <p>One intelligent kitchen companion.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="image-frame">
+                <img
+                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1100&q=85"
+                    alt="Fresh vegetables and ingredients"
+                >
+                <div class="image-label">
+                    <span class="label-icon">✳</span>
+                    <div>
+                        <strong>Fresh possibilities</strong>
+                        <p>Make every ingredient count.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-card freshness-card">
+                <span class="mini-icon">🌿</span>
+                <div>
+                    <small>OUR PURPOSE</small>
+                    <strong>Less food waste</strong>
+                </div>
+            </div>
+
+            <div class="floating-card ai-card">
+                <span class="ai-symbol">✦</span>
+                <div>
+                    <small>POWERED BY</small>
+                    <strong>Artificial Intelligence</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-strip">
+        <p>YOUR FRIDGE HAS MORE POTENTIAL.</p>
+        <p>LET'S MAKE THE MOST OF IT. <span>✳</span></p>
+    </section>
+
+    <section class="features-section" id="features">
+        <div class="section-heading">
+            <div>
+                <span class="section-kicker">A SMARTER WAY TO EAT</span>
+                <h2>Meet your kitchen's<br><em>new intelligence.</em></h2>
+            </div>
+            <p>From recognizing what's inside your fridge to finding the perfect meal, every step is designed to help you make better food decisions.</p>
+        </div>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <div class="feature-number">01 / RECOGNIZE</div>
+                <div class="feature-icon">⌕</div>
+                <h3>Fridge Scanner</h3>
+                <p>Upload a photo of your fridge and let computer vision help identify your ingredients.</p>
+                <a href="#scanner">Explore scanning <span>↗</span></a>
+            </article>
+
+            <article class="feature-card featured">
+                <div class="feature-number">02 / PROTECT</div>
+                <div class="feature-icon">◷</div>
+                <h3>Freshness Insights</h3>
+                <p>Machine learning estimates spoilage risk and helps you prioritize ingredients.</p>
+                <a href="#scanner">Discover freshness <span>↗</span></a>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-number">03 / CREATE</div>
+                <div class="feature-icon">✳</div>
+                <h3>AI Recipe Studio</h3>
+                <p>Transform available ingredients into creative recipes tailored to your preferences.</p>
+                <a href="#scanner">Find your next meal <span>↗</span></a>
+            </article>
+        </div>
+    </section>
+
+    <section class="scanner-section" id="scanner">
+        <div class="scanner-copy">
+            <span class="section-kicker">START WITH WHAT YOU HAVE</span>
+            <h2>Take a look<br>inside your <em>fridge.</em></h2>
+            <p>Upload a clear photo of your fridge. Your smart kitchen journey starts here.</p>
+
+            <ul class="scanner-benefits">
+                <li><span>✓</span> Ingredient recognition</li>
+                <li><span>✓</span> Freshness risk insights</li>
+                <li><span>✓</span> Personalized recipe ideas</li>
+            </ul>
+        </div>
+
+        <div class="upload-panel">
+            <div class="upload-heading">
+                <div>
+                    <span class="section-kicker">FRIDGE SCANNER</span>
+                    <h3>Upload your image</h3>
+                </div>
+                <span class="upload-badge">IMAGE INPUT</span>
+            </div>
+
+            <label class="upload-zone" for="fridgeImage" id="uploadZone">
+                <div class="upload-symbol">↑</div>
+                <strong>Drop your fridge image here</strong>
+                <p>or <span>browse files</span> from your device</p>
+                <small>JPG, PNG or WEBP · Image preview</small>
+                <img id="imagePreview" alt="Selected fridge preview" hidden>
+            </label>
+
+            <input type="file" id="fridgeImage" accept="image/png,image/jpeg,image/webp" hidden>
+
+            <div class="upload-actions">
+                <span id="fileStatus">No image selected</span>
+                <button class="primary-button analyze-button" id="analyzeButton" disabled>
+                    Analyze my fridge <span>↗</span>
+                </button>
+            </div>
+            <p class="demo-notice" id="demoNotice">
+                Image preview is available. AI ingredient detection will be connected in the next development stage.
+            </p>
+        </div>
+    </section>
+
+    <section class="closing-section">
+        <span>✳ SMARTER CHOICES START AT HOME</span>
+        <h2>Make every ingredient<br><em>count.</em></h2>
+        <a href="#scanner" class="light-button">Start your journey ↗</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="#home" class="brand">✳ SmartFridge<span class="brand-dot">.</span></a>
+    <p>Intelligent food management for a more sustainable future.</p>
+    <span>© 2026 SmartFridge. All rights reserved.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
